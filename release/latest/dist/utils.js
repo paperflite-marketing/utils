@@ -1,9 +1,9 @@
 /*
 Copyright (c) 2018 Daybrush
-@name: @daybrush/utils
+@name: @paperflite-marketing/utils
 license: MIT
 author: Daybrush
-repository: https://github.com/daybrush/utils
+repository: https://github.com/paperflite-marketing/utils.git
 @version 1.6.0
 */
 (function (global, factory) {
@@ -179,7 +179,7 @@ repository: https://github.com/daybrush/utils
 
   var getCrossBrowserProperty = /*#__PURE__*/function (property) {
     if (!doc) {
-      return "";
+      return property;
     }
 
     var styles = (doc.body || doc.documentElement).style;

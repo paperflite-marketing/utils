@@ -1,5 +1,5 @@
 {
-  "name": "@paperflite-marketing/utils",
+  "name": "@daybrush/utils",
   "version": "1.6.0-win-1",
   "description": "utils for daybrush",
   "main": "dist/utils.js",

@@ -41,7 +41,7 @@
     "coverage": "karma start --coverage && print-coveralls --sort=desc",
     "test": "karma start",
     "build": "npm run build:rollup && npm run declaration",
-    "declaration": "rmdir /s /q declaration && tsc -p tsconfig.declaration.json",
+    "declaration": "tsc -p tsconfig.declaration.json",
     "build:rollup": "rollup -c",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "doc": "rmdir /s /q ./doc && jsdoc -c jsdoc.json",

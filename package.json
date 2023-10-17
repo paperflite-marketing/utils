@@ -41,10 +41,10 @@
     "coverage": "karma start --coverage && print-coveralls --sort=desc",
     "test": "karma start",
     "build": "npm run build:rollup && npm run declaration",
-    "declaration": "deltree declaration && tsc -p tsconfig.declaration.json",
+    "declaration": "rmdir /s /q declaration && tsc -p tsconfig.declaration.json",
     "build:rollup": "rollup -c",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "doc": "deltree ./doc && jsdoc -c jsdoc.json",
+    "doc": "rmdir /s /q ./doc && jsdoc -c jsdoc.json",
     "release": "npm run build && npm run doc && release --dirs=dist,doc",
     "prepare": "yarn build || npm run build"
   },
